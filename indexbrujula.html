@@ -181,7 +181,7 @@
         const info = document.getElementById('info');
         const compassBox = document.getElementById('compassBox');
 
-        // Generar rayitas cada 2 grados y números cada 15 grados
+        // Generar rayitas cada 2 grados
         for (let i = 0; i < 360; i += 2) {
             const mark = document.createElement('div');
             
@@ -197,7 +197,7 @@
             rotatingDisk.appendChild(mark);
         }
 
-        // Bucle separado para asegurar que todos los números se impriman correctamente cada 15°
+        // Generar números cada 15 grados
         for (let i = 0; i < 360; i += 15) {
             if (i !== 0 && i !== 90 && i !== 180 && i !== 270) {
                 const text = document.createElement('div');
